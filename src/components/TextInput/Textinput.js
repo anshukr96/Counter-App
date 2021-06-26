@@ -9,7 +9,7 @@ export const TextInput = (props) => {
         type={type}
         value={count}
         onChange={(val) =>
-          +val?.target?.value > 1000
+          +val?.target?.value > maxValue
             ? onValueChange(1000)
             : onValueChange(+val?.target?.value)
         }
